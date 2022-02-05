@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 50%;
+  flex-wrap: wrap;
+}
+.panel {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+.panel:hover {
+  box-shadow: inset 0px 0px 0px 3px rgb(43, 187, 223);
+  box-sizing: border-box;
+}
+.center {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  top: 40%;
+  left: 45%;
+  background-color: black;
+}
+.panel1 {
+  background-color: yellow;
+  border-top-left-radius: 100%;
+}
+.panel2 {
+  background-color: blue;
+  border-top-right-radius: 100%;
+}
+.panel3 {
+  background-color: red;
+  border-bottom-left-radius: 100%;
+}
+.panel4 {
+  background-color: green;
+  border-bottom-right-radius: 100%;
+}
+.panel.active {
+  background-color: #fff;
+}
